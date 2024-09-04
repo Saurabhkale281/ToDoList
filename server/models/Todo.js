@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 const TodoSchema = new mongoose.Schema({
     assignedTo: {
-        type: String,
+        enum:['User1','user2','user3','user4'],
         required: true
     },
     status: {

@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
             priority: priority,
             comments: comments
         };
-console.log(taskData);
+        console.log(taskData);
         
         fetch('http://localhost:8000/api/todos', {  
             method: 'POST', 
