@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
         };
 console.log(taskData);
         
-        fetch('http://localhost:8000/todos', {  
+        fetch('http://localhost:8000/api/todos', {  
             method: 'POST', 
             headers: {
                 'Content-Type': 'application/json'

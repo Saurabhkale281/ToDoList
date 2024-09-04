@@ -1,7 +1,7 @@
 
 async function getTaskData(id) {
     try {
-        const response = await fetch(`http://localhost:8000/todos/${id}`);
+        const response = await fetch(`http://localhost:8000/api/todos/${id}`);
         if (!response.ok) throw new Error('Task not found');
         
         const task = await response.json();
@@ -38,7 +38,7 @@ document.getElementById('editTaskForm').addEventListener('submit', async functio
     };
 
     try {
-        const response = await fetch(`http://localhost:8000/todos/${taskId}`, {
+        const response = await fetch(`http://localhost:8000/api/todos/${taskId}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'

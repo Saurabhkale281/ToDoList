@@ -1,7 +1,7 @@
 // Function to fetch tasks from the backend
 async function fetchTasks() {
     try {
-        const response = await fetch('http://localhost:8000/todos'); 
+        const response = await fetch('http://localhost:8000/api/todos'); 
         if (response.ok) {
             const data = await response.json();
             return data; 
@@ -121,7 +121,7 @@ async function deleteTask(id) {
     const confirmDelete = confirm(`Are you sure you want to delete task with ID: ${id}?`);
     if (confirmDelete) {
         try {
-            const response = await fetch(`http://localhost:8000/todos/${id}`, {
+            const response = await fetch(`http://localhost:8000/api/todos/${id}`, {
                 method: 'DELETE',
                 headers: {
                     'Content-Type': 'application/json',

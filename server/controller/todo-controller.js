@@ -22,7 +22,7 @@ export const addTodo = async (request, response) => {
 
 export const getAllTodos = async (request, response) => {
     try {
-        const todos = await Todo.find({}).sort({ 'createdAt': -1 });
+        const todos = await Todo.find({});
 
         return response.status(200).json(todos);
     } catch (error) {
