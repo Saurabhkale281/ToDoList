@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Task</title>
+    <link rel="stylesheet" href="./editTask.css">
+</head>
+<body>
+    <div class="edit-container">
+        <h2>Edit Task</h2>
+        <form id="editTaskForm">
+            <label for="assignedTo">Assigned To:</label>
+            <select id="assignedTo" name="assignedTo" required>
+                <option value="User1">User1</option>
+                <option value="User2">User2</option>
+                <option value="User3">User3</option>
+                <option value="User4">User4</option>
+            </select>
+
+            <label for="status">Status:</label>
+            <select id="status" name="status" required>
+                <option value="Not Started">Not Started</option>
+                <option value="In Progress">In Progress</option>
+                <option value="Completed">Completed</option>
+            </select>
+
+            <label for="dueDate">Due Date:</label>
+            <input type="date" id="dueDate" name="dueDate" required>
+
+            <label for="priority">Priority:</label>
+            <select id="priority" name="priority" required>
+                <option value="Low">Low</option>
+                <option value="Normal">Normal</option>
+                <option value="High">High</option>
+            </select>
+
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments"></textarea>
+
+            <button type="submit">Save</button>
+            <button type="button" class="cancel-btn" onclick="window.location.href='index.html'">Cancel</button>
+        </form>
+    </div>
+
+    <script src="editTask.js"></script>
+</body>
+</html>

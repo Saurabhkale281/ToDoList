@@ -1,0 +1,61 @@
+
+
+.edit-container {
+    width: 50%;
+    margin: 50px auto;
+    background-color: #f8f9fa;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.edit-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.edit-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.edit-container label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.edit-container input[type="text"],
+.edit-container input[type="date"],
+.edit-container select,
+.edit-container textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.edit-container textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.edit-container button {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.edit-container button.cancel-btn {
+    background-color: #dc3545;
+}
+
+.edit-container button:hover {
+    opacity: 0.8;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="./homePage.css">
+</head>
+<body>
+    <div class="container">
+       
+        <h1 class="main-title">Tasks</h1>
+        <h2 class="subtitle">All Tasks</h2>
+
+        <div class="header">
+            <button id="newTaskBtn">New Task</button>
+            <button id="refreshBtn">Refresh</button>
+        </div>
+        
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search...">
+        </div>
+        
+        <div class="table-container">
+            <table id="taskTable">
+                <thead>
+                    <tr>
+                        <th>Select</th>
+                        <th>Assigned To</th>
+                        <th>Status</th>
+                        <th>Due Date</th>
+                        <th>Priority</th>
+                        <th>Comments</th>
+                        <th>Actions</th> 
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="pagination">
+            <button id="firstBtn">First</button>
+            <button id="prevBtn">Prev</button>
+            <span id="pageNumber"></span>
+            <button id="nextBtn">Next</button>
+            <button id="lastBtn">Last</button>
+        </div>
+    </div>
+
+    <script src="homePage.js"></script>
+</body>
+</html>
